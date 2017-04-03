@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+#myCarousel{
+	margin: 50px 0 0 0;
+}
+
+.carousel-inner-one img{
+	margin: 0 auto;
+}
+.navbar-brand-1{
+	padding: 6px 0;
+}
+
+.carousel-indicators-1 li{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #ebedee;
+    margin: 5px 1px;
+    background-color: #ebedee;
+    opacity: .7;
+}
+
+.carousel-indicators .active{
+	width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    margin: 5px 1px;
+    background-color: #e08a22;
+    opacity: .9;
+}
