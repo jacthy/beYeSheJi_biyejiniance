@@ -10,23 +10,52 @@
 <body>
 <!-- 可能会拿来当作首页 -->
 <!-- 顶部响应式导航栏 -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top top-bg">
 		<div class="container">
 			<div class="navbar-header">
 				<a href="" class="navbar-brand navbar-brand-1" ><img src="./img/logo.png"  style="height: 35px;" alt=""></a>
-					<span class="icon-bar"></span>
+				<a href="" class="navbar-brand navbar-brand-2" id="navbar-brand-2"><img src="./img/top_ship.png"  style="height: 35px;" alt=""></a>
+				<span class="icon-bar"></span>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
+					<span class="icon-bar "></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
+					<li class="dropdown hidden-xs">
+						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> 照片墙<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">生活日常&nbsp; ></a></li>
+							<li><a href="#">校园风光&nbsp; ></a></li>
+							<li><a href="#">活动照片&nbsp; ></a></li>
+							<li><a href="#">其他&nbsp; ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown hidden-xs">
+						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span> 信息与动态<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">群组信息交流&nbsp; ></a></li>
+							<li><a href="#">个人动态&nbsp; ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown hidden-xs">
+						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-education"></span> 毕业纪念册<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">纪念册共享&nbsp; ></a></li>
+							<li><a href="#">个人纪念册&nbsp; ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="" data-toggle="dropdown"  ><span class="glyphicon glyphicon-user"></span> 个人中心<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu show-xs">
+							<li><a href="#">更新个人信息&nbsp; ></a></li>
+							<li><a href="#">我的纪念册&nbsp; ></a></li>
+							<li><a href="#">我的留言板&nbsp; ></a></li>
+							<li><a href="#">个人设置&nbsp; ></a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -84,10 +113,10 @@
                     }
                 </style>
                 <ul class="nav nav-tabs nav-tabs-justified">
-                    <div class="row" align="center">
-                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a href="#">Bootstrap1</a></li></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a href="#">Bootstrap2</a></li></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a href="#">Bootstrap3</a></li></div>
+                    <div class="row" align="center" >
+                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><a class="nav-tabs-fontsize" href="" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> 照片墙</span></a></li></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a class="nav-tabs-fontsize" href="" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span>信息墙</span></a></li></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a class="nav-tabs-fontsize" href="" data-toggle="dropdown"><span class="glyphicon glyphicon-education"></span> 纪念册</span></a></li></div>
                     </div>
                 </ul>
             </div>

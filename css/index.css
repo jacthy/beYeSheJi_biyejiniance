@@ -2,13 +2,20 @@
 
 #myCarousel{
 	margin: 50px 0 0 0;
+    background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(red, green, blue); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(red, green, blue); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle,white, #826335, black); /* 标准的语法（必须放在最后） */
 }
 
 .carousel-inner-one img{
 	margin: 0 auto;
 }
-.navbar-brand-1{
+.navbar-brand-1,.navbar-brand-2{
 	padding: 6px 0;
+}
+#navbar-brand-2{
+    margin-left: 10px;
 }
 
 .carousel-indicators-1 li{
@@ -21,7 +28,9 @@
     background-color: #ebedee;
     opacity: .7;
 }
-
+.carousel-indicators-2{
+    margin-left: 10px;
+}
 .carousel-indicators .active{
 	width: 18px;
     height: 18px;
@@ -29,4 +38,21 @@
     margin: 5px 1px;
     background-color: #e08a22;
     opacity: .9;
+}
+/*添加一张背景*/
+.top-bg{
+    background-image: url('../img/top_bg.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 790px) {
+    .top-bg {
+       background-size: cover;
+    }
+}
+
+.nav-tabs-fontsize{
+    font-size: 18px;
+    line-height: 50px;
 }
