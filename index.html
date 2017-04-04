@@ -5,45 +5,62 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<style>
-
-	</style>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <!-- 可能会拿来当作首页 -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+<!-- 顶部响应式导航栏 -->
+	<nav class="navbar navbar-default navbar-fixed-top top-bg">
 		<div class="container">
 			<div class="navbar-header">
-				<a href="" class="navbar-brand" style="padding: 0"><img src="./img/1.png" width="60px" alt=""></a>
-					<span class="icon-bar"></span>
+				<a href="" class="navbar-brand navbar-brand-1" ><img src="./img/logo.png"  style="height: 35px;" alt=""></a>
+				<a href="" class="navbar-brand navbar-brand-2" id="navbar-brand-2"><img src="./img/top_ship.png"  style="height: 35px;" alt=""></a>
+				<span class="icon-bar"></span>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
+					<span class="icon-bar "></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
-					<li><a href=""><span class="glyphicon glyphicon-home"></span> 1111</a></li>
+					<li class="dropdown hidden-xs">
+						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> 照片墙<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">生活日常&nbsp; ></a></li>
+							<li><a href="#">校园风光&nbsp; ></a></li>
+							<li><a href="#">活动照片&nbsp; ></a></li>
+							<li><a href="#">其他&nbsp; ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown hidden-xs">
+						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span> 信息与动态<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">群组信息交流&nbsp; ></a></li>
+							<li><a href="#">个人动态&nbsp; ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown hidden-xs">
+						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-education"></span> 毕业纪念册<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">纪念册共享&nbsp; ></a></li>
+							<li><a href="#">个人纪念册&nbsp; ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="" data-toggle="dropdown"  ><span class="glyphicon glyphicon-user"></span> 个人中心<span class="caret" style="margin-left: 5px;"></span></a>
+						<ul class="dropdown-menu show-xs">
+							<li><a href="#">更新个人信息&nbsp; ></a></li>
+							<li><a href="#">我的纪念册&nbsp; ></a></li>
+							<li><a href="#">我的留言板&nbsp; ></a></li>
+							<li><a href="#">个人设置&nbsp; ></a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<p style="margin: 100px;">adsafag</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">12121211</p>
-	<p style="margin: 100px;">asdadsad</p>
+	
 	<!-- <nav class="navbar navbar-default navbar-static-bottom hidden-xs hidden-sm"> 
 		<div class="container">
 			<div class="navbar-header">
@@ -57,13 +74,144 @@
 			</ul>
 		</div>
 	</nav> -->
-	<div class="container-fluid hidden-md hidden-lg " >
-		<div class="row text-center">
-			<div class="col-xs-4 col-sm-4 bg-blue"> 首页</div>
-			<div class="col-xs-4 col-sm-4 bg-blue"> 资讯 </div>
-			<div class="col-xs-4 col-sm-4 bg-blue"> 产品</div>
+<!-- 响应式轮播图 -->
+	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators carousel-indicators-1">
+			<!-- <span class="carousel-indicators-span"> -->
+				<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+			<!-- </span> -->
+		</ol>
+		<div class="carousel-inner carousel-inner-one">
+			<div class="item active"><img src="./img/ban1.jpg" alt="one"></div>
+			<div class="item"><img src="./img/ban2.jpg" alt="two"></div>
+			<div class="item"><img src="./img/ban3.jpg" alt="three"></div>
+			<div class="item"><img src="./img/ban4.jpg" alt="fore"></div>
+			<div class="item"><img src="./img/ban5.jpg" alt="five"></div>
+			<div class="item"><img src="./img/ban6.jpg" alt="six"></div>
+		</div>
+		<a href="#myCarousel" data-slide="prev" class="carousel-control left"><img style="transform: rotate(180deg);" src="./img/1.png" width="40%" alt="left"></a>
+		<a href="#myCarousel" data-slide="next" class="carousel-control right"><img src="./img/1.png" width="40%" alt="left"></a>
+	</div>
+<div class="tab1">
+	<div class="container">
+		<h2 class="tab-h2">「为什么选择瓢城企业培训」</h2>
+		<p class="tab-p">强大的师资力量，完美的实战型管理课程，让您的企业实现质的腾飞！</p>
+		<div class="row">
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-1.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">课程内容</h4>
+						<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+						<p>我们：知名企业家、管理学大师联合编写的具有实现性教材！</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-2.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">师资力量</h4>
+						<p class="text-muted">其他：非欧美正牌大学毕业的、业界没有知名度的讲师！</p>
+						<p>我们：美国哈佛、耶鲁等世界一流高校、享有声誉的名牌专家！</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-3.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">课时安排</h4>
+						<p class="text-muted">其他：无法保证上课效率、没有时间表，任务无法完成！</p>
+						<p>我们：保证按时间表的上课、效率高、当天的任务当天完成！</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-4.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">服务团队</h4>
+						<p class="text-muted">其他：社会招聘的、服务水平参差不齐的普通员工！</p>
+						<p>我们：内部培养、经受过良好高端服务培训的高标准员工！</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+</div>
+<div class="tab1">
+	<div class="container">
+		<h2 class="tab-h2">「为什么选择瓢城企业培训」</h2>
+		<p class="tab-p">强大的师资力量，完美的实战型管理课程，让您的企业实现质的腾飞！</p>
+		<div class="row">
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-1.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">课程内容</h4>
+						<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+						<p>我们：知名企业家、管理学大师联合编写的具有实现性教材！</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-2.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">师资力量</h4>
+						<p class="text-muted">其他：非欧美正牌大学毕业的、业界没有知名度的讲师！</p>
+						<p>我们：美国哈佛、耶鲁等世界一流高校、享有声誉的名牌专家！</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-3.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">课时安排</h4>
+						<p class="text-muted">其他：无法保证上课效率、没有时间表，任务无法完成！</p>
+						<p>我们：保证按时间表的上课、效率高、当天的任务当天完成！</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/tab1-4.png" class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">服务团队</h4>
+						<p class="text-muted">其他：社会招聘的、服务水平参差不齐的普通员工！</p>
+						<p>我们：内部培养、经受过良好高端服务培训的高标准员工！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 响应式底部导航栏 -->
+	
 	<div class="main_nav_bottom hidden-sm hidden-md hidden-lg">
         <nav class="navbar navbar-default navbar-fixed-bottom">
             <div class="container" align="center">
@@ -76,10 +224,10 @@
                     }
                 </style>
                 <ul class="nav nav-tabs nav-tabs-justified">
-                    <div class="row" align="center">
-                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a href="#">Bootstrap1</a></li></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a href="#">Bootstrap2</a></li></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a href="#">Bootstrap3</a></li></div>
+                    <div class="row" align="center" >
+                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><a class="nav-tabs-fontsize" href="" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> 照片墙</span></a></li></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a class="nav-tabs-fontsize" href="" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span>信息墙</span></a></li></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4" align="center"><li><a class="nav-tabs-fontsize" href="" data-toggle="dropdown"><span class="glyphicon glyphicon-education"></span> 纪念册</span></a></li></div>
                     </div>
                 </ul>
             </div>
@@ -88,4 +236,18 @@
 </body>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+// 自动播放
+	$('#myCarousel').carousel({
+		interval:4000,
+	});
+// 做垂直居中的
+	$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	$(window).resize(function () {
+		var $height = $('.carousel-inner img').eq(0).height() || 
+					  $('.carousel-inner img').eq(1).height() || 
+					  $('.carousel-inner img').eq(2).height();
+		$('.carousel-control').css('line-height', $height + 'px');
+	});
+</script>
 </html>
