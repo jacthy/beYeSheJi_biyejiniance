@@ -55,4 +55,26 @@
 .nav-tabs-fontsize{
     font-size: 18px;
     line-height: 50px;
+    color: white;
+    letter-spacing: 2px;
 }
+
+.row-li-style li{
+    border: 1px solid #e0e6db;
+    border-radius: 13px;
+    background-color: rgb(51, 122, 183);
+}
+/*照片墙的样式*/
+.zhpq-h2{ font-size: 30px; letter-spacing: 1px;margin-top: 30px; }
+.zhpq-p{ font-size: 20px; letter-spacing: 1px;margin-top: 30px;}
+@media screen and (max-width: 790px) {
+    .zhpq-h2{ font-size: 20px; margin-top: 15px; }
+    .zhpq-p{ font-size: 12px; margin-top: 15px;}
+}
+.pic-show{ display: block;margin-left: auto;margin-right: auto; }
+.pic-show-picture{ width: 40%; float: left;margin-top: 10px; }
+.pic-show-body h3{ margin-top: 10px; }
+.pic-show-body{ width: 56%;float: right;margin-left: 3%; }
+@media screen and (max-width: 790px) {.pic-show-body p{ font-size:12px; }}
+
+/*这里是真正的项目*/
