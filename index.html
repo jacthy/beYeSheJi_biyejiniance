@@ -37,7 +37,7 @@
 						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span> 信息与动态<span class="caret" style="margin-left: 5px;"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">群组信息交流&nbsp; ></a></li>
-							<li><a href="#">个人动态&nbsp; ></a></li>
+							<li><a href="#">个人信息动态&nbsp; ></a></li>
 						</ul>
 					</li>
 					<li class="dropdown hidden-xs">
@@ -62,7 +62,7 @@
 	</nav>
 <!-- 响应式轮播图 -->
 	<div id="myCarousel" class="carousel slide">
-		<ol class="carousel-indicators carousel-indicators-1">
+		<ol class="carousel-indicators carousel-indicators-1 hidden-xs">
 			<!-- <span class="carousel-indicators-span"> -->
 				<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -142,7 +142,76 @@
 			</div>
 		</div>
 	</div>
-
+<!-- 这里是信息与交流部分 -->
+	<div class="communicating" >
+		<div class="container">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h3 class="panel-title">学生信息共享与交流</h3>
+				</div>
+				<div class="panel-body">
+					<ul class="nav nav-tabs " id="nav-tabs-1">
+						<li class="active" onclick="_active(this)" data-target="quzuxinxi"><a >群组信息动态<span class="badge"></span></a></li>
+						<li onclick="_active(this)" data-target="gerenxinxi"><a >个人信息动态 <span class="badge">..</span></a></li>
+					</ul>
+				</div>
+					<div class="container-fluid show" id="quzuxinxi">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<a><p>第一个表第一列</p></a>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<a><p>第一个表第二列</p></a>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<a><p>第一个表第三列</p></a>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<a><p>第一个表第四列</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid hidden" id="gerenxinxi" >
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<a><p>第二个表第一列</p></a>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<a><p>第二个表第二列</p></a>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<a><p>第二个表第三列</p></a>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<a><p>第二个表第四列</p></a>
+							</div>
+						</div>
+					</div>
+					<div >
+						<ul class="pagination pull-right" id="pagination-1">
+							<li><a href="#">&laquo;</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li class="disabled"><a href="#">5</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				<div class="panel-footer panel-footer-1">
+					<button class="btn btn-primary-1 pull-right" >进入交流区</button>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<div class="list-group">
+				<button class="list-group-item">1.这是首页</button>
+				<button class="list-group-item active">2.这是第二页 <span class="badge">10</span></button>
+				<button class="list-group-item">3.这是第三页</button>
+				<button class="list-group-item">4.这是第四页</button>
+			</div>
 
 <!-- 响应式底部导航栏 -->
 	<div style="margin-top: 60px"></div><!--为了使内容能全部展现出来-->
@@ -177,7 +246,6 @@
 	// 	interval:4000,
 	// });
 // 做垂直居中的
-
 	$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
 	$(window).resize(function () {
 		var $height = $('.carousel-inner img').eq(0).height() || 
@@ -185,7 +253,17 @@
 					  $('.carousel-inner img').eq(2).height();
 		$('.carousel-control').css('line-height', $height + 'px');
 	});
-	
+	function _active(e){
+		$(e).parent().children().removeClass("active");
+		$(e).addClass("active");
+		$(e).parent().find('.active span').css('display','none');
+		var $target = '#'+$(e).attr("data-target");
+		// console.log($($target).css('display','table'));
+		$(".container-fluid").removeClass('show');
+		$(".container-fluid").addClass('hidden');
+		$($target).removeClass('hidden');
+		$($target).addClass('show');
+	}
 </script>
 </html>
 <!-- 这里是真正的项目所在地 -->
