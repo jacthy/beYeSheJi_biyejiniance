@@ -69,6 +69,7 @@ a{ cursor: pointer; outline: none;}
     background-color: rgb(51, 122, 183);
 }
 /*照片墙的样式*/
+.zhpq{ margin-bottom: 50px; }
 .zhpq-h2{ font-size: 30px; letter-spacing: 1px;margin-top: 30px; }
 .zhpq-p{ font-size: 20px; letter-spacing: 1px;margin-top: 30px;}
 @media screen and (max-width: 790px) {
@@ -77,18 +78,18 @@ a{ cursor: pointer; outline: none;}
 }
 
 .pic-show{ display: block;margin-left: auto;margin-right: auto; }
-.pic-show-picture{ width: 40%; float: left;margin-top: 10px; }
+.pic-show-picture{ width: 50%; float: left;margin-top: 10px; }
 .pic-show-body h3{ margin-top: 10px; }
-.pic-show-body{ width: 56%;float: right;margin-left: 3%; }
+.pic-show-body{ width: 46%;float: right;margin-left: 3%; }
 @media screen and (max-width: 790px) {.pic-show-body p{ font-size:12px; }.pic-show-body h3{ font-size: 18px; }}
 /*交流与共享模块*/
 .communicating{
     background-color: #f5f5f5;
-    padding: 25px 0px;
+    padding: 50px 0px;
 }
 .panel-footer-1{
     background-color: #dff0d8;
-    padding: 5px 15px;
+    padding: 10px 15px;
 }
 .btn-primary-1{
     background-color: #337A27;
@@ -105,11 +106,50 @@ table tbody{
     }
     #pagination-1{ margin-right: 5px; }
 }
+
+/*毕业纪念册*/
+.jiniance{
+        margin: 50px 0px;
+}
+.jiniance .caption{
+    text-align: center;
+}
 /*#nav-tabs-1 .active span{
     display: none;
 }*/
+.lastblock {
+        max-width: 70%
+}
+@media screen and (max-width: 1000px) {
+   .lastblock {
+        max-width: 85%
+   }
+}
+@media screen and (max-width: 790px){
+    .lastblock {
+        max-width: 95%
+   }
+   .lastblock h3{
+        font-size: 20px;
+   }
+   .lastblock p{
+        font-size: 12px;
+   }
+   .btn-lg{
+        padding: 8px 14px;
+        font-size: 16px;
+   }
+}
+
+.panel-title-reset-1{ font-size: 20px; }
+.panel-heading-reset-1{ padding: 15px; }
 
 
-
-
-/*这里是真正的项目*/
+#footer {
+    background-color: #666;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+}
+#footer a{ color: #eee; }
